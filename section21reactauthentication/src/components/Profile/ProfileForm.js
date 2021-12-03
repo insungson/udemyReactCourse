@@ -43,8 +43,8 @@ const ProfileForm = () => {
           //access token이 mF_9.B5f-4.1JqM라면 아래와 같이 헤더 값을 만들어서 전송하면 됩니다.
           //GET /resource HTTP/1.1 Host: server.example.com Authorization: Bearer mF_9.B5f-4.1JqM
 
-          //즉! 여기선 아래처럼 보내면 된다! 위의 body 에서 넣었기 때문에 굳이 여기서 넣을 필요가 없다.
-          // Authorization: `Bearer ${authCtx.token}`,
+          //즉! 여기선 아래처럼 보내면 된다!
+          Authorization: `Bearer ${authCtx.token}`,
         },
       }
     )
